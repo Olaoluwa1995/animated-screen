@@ -1,3 +1,5 @@
+import 'package:animated_screen/constants/widgets/bottom-nav.dart';
+import 'package:animated_screen/views/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'House App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -26,27 +28,25 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
+  int _currentIndex = 0;
+   
   @override
   Widget build(BuildContext context) {
+
+     void onTabTapped (int index) {
+      setState(() {
+        _currentIndex = index;
+      });
+    }
+
+    final List<Widget> _children = [
+      Home(),
+      Container(),
+      Container()
+    ];
     return Scaffold(
-      appBar: AppBar(
-        title: Text('House'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '5',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
-      ),
+        bottomNavigationBar: BottomNav(_currentIndex, onTabTapped,),
+        body: _children[_currentIndex],
     );
   }
 }
