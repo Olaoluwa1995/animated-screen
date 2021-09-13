@@ -22,27 +22,27 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # assets:
-  #   - assets/+.svg
-  #   - Assets/balcony.svg
-  #   - Assets/bathtube.svg
-  #   - Assets/bed (1).svg
-  #   - Assets/bed.svg
-  #   - Assets/bulb.svg
-  #   - Assets/Circles.svg
-  #   - Assets/furniture-and-household.svg
-  #   - Assets/Group 38.svg
-  #   - Assets/house.svg
-  #   - Assets/Icon awesome-power-off.svg
-  #   - Assets/Icon feather-home.svg
-  #   - Assets/Icon feather-settings.svg
-  #   - Assets/Icon ionic-md-arrow-round-back.svg
-  #   - Assets/kitchen.svg
-  #   - Assets/light bulb.svg
-  #   - Assets/room.svg
-  #   - Assets/solution.svg
-  #   - Assets/solution1.svg
-  #   - Assets/solution2.svg
-  #   - Assets/surface1.svg
-  #   - Assets/surface2.svg
-  #   - Assets/user.svg
+  assets:
+    - assets/+.svg
+    - assets/balcony.svg
+    - assets/bathtube.svg
+    - assets/bed1.svg
+    - assets/bed.svg
+    - assets/bulb.svg
+    - assets/circles.svg
+    - assets/furniture-and-household.svg
+    - assets/group38.svg
+    - assets/house.svg
+    - assets/icon-awesome-power-off.svg
+    - assets/icon-feather-home.svg
+    - assets/icon-feather-settings.svg
+    - assets/icon-ionic-md-arrow-round-back.svg
+    - assets/kitchen.svg
+    - assets/light-bulb.svg
+    - assets/room.svg
+    - assets/solution.svg
+    - assets/solution1.svg
+    - assets/solution2.svg
+    - assets/surface1.svg
+    - assets/surface2.svg
+    - assets/user.svg
